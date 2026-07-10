@@ -41,11 +41,11 @@ public class TicketServiceImpl implements TicketService {
             switch(currentRequest.getTicketType()) {
                 case ADULT:
                     numberOfAdultTickets += currentNumberOfTickets;
-                    totalPrice += (currentRequest.getNoOfTickets() * ADULT_TICKET_PRICE);
+                    totalPrice += (currentNumberOfTickets * ADULT_TICKET_PRICE);
                     break;
                 case CHILD:
                     numberOfChildTickets += currentNumberOfTickets;
-                    totalPrice += (currentRequest.getNoOfTickets() * CHILD_TICKET_PRICE);
+                    totalPrice += (currentNumberOfTickets * CHILD_TICKET_PRICE);
                     break;
                 case INFANT:
                     numberOfInfantTickets += currentNumberOfTickets;
